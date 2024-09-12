@@ -1,0 +1,27 @@
+CREATE TABLE Employees (
+  EmployeeID INT PRIMARY KEY,
+  FirstName VARCHAR(100),
+  LastName VARCHAR(100),
+  Salary DECIMAL(10, 2),
+  Department VARCHAR(50)
+);
+
+-- Menambahkan data ke tabel Employees
+INSERT INTO Employees (EmployeeID, FirstName, LastName, Salary, Department)
+VALUES (1, 'Alice', 'Smith', 5000.00, 'HR'),
+       (2, 'Bob', 'Johnson', 6000.00, 'Finance'),
+       (3, 'Carol', 'Williams', 7000.00, 'IT');
+
+-- Mengambil data dari tabel Employees
+SELECT * FROM Employees;
+
+-- Memperbarui data salary pada karyawan dengan EmployeeID = 1
+UPDATE Employees 
+SET Salary = 5500.00 
+WHERE EmployeeID = 1;
+
+-- Menghapus data karyawan dengan EmployeeID = 2
+DELETE FROM Employees WHERE EmployeeID = 2;
+
+-- Menggunakan ORDER BY untuk mengurutkan data berdasarkan Salary
+SELECT * FROM Employees ORDER BY Salary DESC;
