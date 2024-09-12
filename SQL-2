@@ -1,0 +1,10 @@
+-- 1. Buat Tabel Employee
+CREATE TABLE Employee (
+  id_emp VARCHAR(5),
+  name_emp VARCHAR(50),
+  age INT
+);
+
+-- 2. Tambahkan Data ke dalam Tabel Employee
+INSERT INTO Employee (id_emp, name_emp, age) VALUES ('123', 'Budi', 21);
+INSERT INTO Employee (id_emp, name_emp, age) VALUES ('234', 'Dani', 23);
