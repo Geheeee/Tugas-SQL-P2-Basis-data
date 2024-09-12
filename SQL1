@@ -8,9 +8,9 @@ CREATE TABLE Employees (
 
 -- Menambahkan data ke tabel Employees
 INSERT INTO Employees (EmployeeID, FirstName, LastName, Salary, Department)
-VALUES (1, 'Alice', 'Smith', 5000.00, 'HR'),
-       (2, 'Bob', 'Johnson', 6000.00, 'Finance'),
-       (3, 'Carol', 'Williams', 7000.00, 'IT');
+VALUES (1, 'Atek', 'Smith', 5000.00, 'HR'),
+       (2, 'gojo', 'Johnson', 6000.00, 'Finance'),
+       (3, 'sukuna', 'Williams', 7000.00, 'IT');
 
 -- Mengambil data dari tabel Employees
 SELECT * FROM Employees;
